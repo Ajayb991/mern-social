@@ -3,10 +3,10 @@ import app from './express';
 import mongoose from 'mongoose';
 
 // Connection URL
-const mongoDBUrl = 'mongodb://mongodb:27017/your-database-name';
+const mongoURI = 'mongodb://localhost:27017';
 
 // Connect to MongoDB
-mongoose.connect(mongoDBUrl, {
+mongoose.connect(mongoURI, {
   useNewUrlParser: true,
   useCreateIndex: true,
   useUnifiedTopology: true,
